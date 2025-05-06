@@ -134,7 +134,7 @@ async def process_bookmark_press(callback: CallbackQuery):
         text=text,
         reply_markup=create_pagination_keyboard(
             "backward",
-            f'{users_db[callback.from_user.id]["page"]}/{len(book)}',
+            f'{users_db[callddback.from_user.id]["page"]}/{len(book)}',
             "forward",
         ),
     )
